@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Modal-JS</title>
+  </head>
+  <body>
+
+    <div class="click-modal">
+      <button class="click-modal__btn modal-open" data-modal="modal-1">Open modal</button>
+    </div>
+
+    <div class="modal" data-modal="modal-1">
+      <div class="modal__bg">
+        <div class="modal__body">
+          <div class="modal__close"><img src="images/close-icon.svg" alt=""></div>
+          <div class="modal__content modal-callback">
+            <div class="modal-callback__title">Modal Title</div>
+            <div class="modal-callback__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem impedit ex, beatae tenetur quam quod vitae fuga iusto? Voluptatum, deleniti amet? Animi odit laboriosam at, nihil assumenda minima natus ipsam, placeat possimus est sit soluta aspernatur optio excepturi aut? Sapiente quae, rerum doloremque iure fugiat blanditiis neque temporibus enim impedit.</div>
+            <div class="modal-callback__button">
+              <button>Click me</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

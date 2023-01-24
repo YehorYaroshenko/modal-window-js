@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+body {
+  font-family: "Nunito";
+  height: 100vh;
+}
+
+.body-locked {
+  overflow: hidden;
+}
+
+.click-modal {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.click-modal__btn {
+  font-family: "Nunito";
+  font-size: 22px;
+  border: 3px solid transparent;
+  background-color: rgb(57, 57, 156);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+.click-modal__btn:hover {
+  border: 3px solid rgb(57, 57, 156);
+  background-color: white;
+  color: black;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+  pointer-events: none;
+}
+.modal__active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+.modal__bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  padding: 20px;
+}
+.modal__close {
+  cursor: pointer;
+}
+.modal__close img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  right: 15px;
+}
+.modal__body {
+  padding: 20px;
+  background-color: white;
+  width: 600px;
+  margin: auto;
+  height: 80%;
+  overflow: auto;
+  border-radius: 15px;
+  position: relative;
+}
+
+.modal-callback {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.modal-callback__title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.modal-callback__button {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.modal-callback__button button {
+  font-family: "Nunito";
+  font-size: 16px;
+  border: 3px solid transparent;
+  background-color: rgb(57, 57, 156);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+.modal-callback__button button:hover {
+  border: 3px solid rgb(57, 57, 156);
+  background-color: white;
+  color: black;
+}
